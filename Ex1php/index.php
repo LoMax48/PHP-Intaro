@@ -3,8 +3,8 @@
 require 'getFinalBalance.php';
 
 // Считываем данные тестов
-$inputFiles = glob("tests/inputs/*.txt");
-$outputFiles = glob("tests/outputs/*.txt");
+$inputFiles = glob("tests/*.dat");
+$outputFiles = glob("tests/*.ans");
 
 $index = 1;
 
