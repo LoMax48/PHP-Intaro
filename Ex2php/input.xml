@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user>
+        <login>lomax48</login>
+        <name>Max</name>
+        <email>lomax4848@gmail.com</email>
+    </user>
+    <user>
+    <login>kifril-ltd</login>
+    <name>Kirill</name>
+    <email>kifril@mail.ru</email>
+    </user>
+</users>
