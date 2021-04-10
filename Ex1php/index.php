@@ -11,8 +11,8 @@ $index = 1;
 // Создаём массив для сравнения ответов
 foreach (array_combine($inputFiles,$outputFiles) as $input => $output) {
     $fs = fopen($output, 'r');
-    $rightAnswer = trim(fgets($fs), " ");
-    $programAnswer = getFinalBalance($input);
+    $rightAnswer = trim(fgets($fs), " \n\r\t");
+    $programAnswer = round(getFinalBalance($input));
     echo "<p>Test $index: ";
     if ($rightAnswer == $programAnswer) {
         echo "Passed.</p>";
