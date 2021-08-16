@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Персональная страница</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="user-container">
+            <div class="user-header">
+                <h1 class="header_title">Привет, меня зовут Макс</h1>
+                <h2 class="header_subtitle">Я студент Липецкого государственного технического университета</h2>
+                <a href="#" class="user-btn">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="user-container">
+            <div class="about_content">
+                <img src="images/PersonalPhoto.jpg" alt="" class="about_photo">
+                <div class="about_text">
+                    <h1 class="about_title">Кто я?</h1>
+                    <div class="text_item">
+                        <h3 class="text_title">ФИО:</h3>
+                        <div class="text">Лобов Максим Юрьевич</div>
+                    </div>
+                    <div class="text_item">
+                        <h3 class="text_title">Возраст:</h3>
+                        <div class="text">19</div>
+                    </div>
+                    <div class="text_item">
+                        <h3 class="text_title">Любимая еда:</h3>
+                        <div class="text">Паста Карбонара и салат "Цезарь"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="user-container">
+            <div class="centering"><h1 class="skills_title">Мои навыки</h1></div>
+            <div class="skills_items">
+                <div class="skill_item">
+                    <h3 class="item_title">WEB</h3>
+                    <ul class="skills_list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill_item">
+                    <h3 class="item_title">Desktop</h3>
+                    <ul class="skills_list">
+                        <li>C/C++</li>
+                        <li>C# .NET</li>
+                    </ul>
+                </div>
+                <div class="skill_item">
+                    <h3 class="item_title">Databases</h3>
+                    <ul class="skills_list">
+                        <li>MS SQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill_item">
+                    <h3 class="item_title">DevOPS</h3>
+                    <ul class="skills_list">
+                        <li>Linux</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form_section">
+        <div class="user-container">
+            <div class="container">
+                <h1>Форма обратной связи</h1>
+                <form id="form">
+                    <input type="text" id="fio" name="fio" class="form-control" placeholder="ФИО"><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="E-mail"><br>
+                    <input type="text" id="phone" name="phone" class="form-control "placeholder="Номер телефона"><br>
+                    <textarea id="comment" name="comment" class="form-control" placeholder="Комментарий"></textarea><br>
+                    <button type="button" id="sendMail" class="btn btn-success">Отправить</button>
+                </form>
+                <div id="errorMsg" class="text-danger"></div>
+                <div id="userMsg" class="text-success"></div><br>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="user-container">
+            <div class="footer_items">
+                <div class="footer_item">
+                    <img class="item_img" src="images/telegram.svg" alt="" >
+                    <div class="item_contact">@lomax48</div>
+                </div>
+                <div class="footer_item">
+                    <img class="item_img" src="images/message.svg" alt="" >
+                    <div class="item_contact">lomax4848@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

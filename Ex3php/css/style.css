@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+html {
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.user-container {
+    max-width: 1060px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.user-header {
+    background: url(../images/y-so-serious.png);
+    padding: 7.111rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.header_title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.111rem;
+}
+
+.header_subtitle {
+    font-weight: 400;
+    font-size: 1.333rem;
+    margin-bottom: 2.667rem;
+    padding: 0 1rem;
+}
+
+.user-btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.555rem 2.333rem;
+    max-width: 300px;
+
+    border: 2px solid white;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+@media screen and (max-width: 615px) {
+
+    .user-header {
+        padding: 5rem 0;
+    }
+
+    .header_title {
+        font-size: 1.2rem;
+    }
+
+    .header_subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.user-btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(255,255,255,.25);
+}
+
+.about_content {
+    display: flex;
+    padding: 1.667rem 4.444rem;
+}
+
+.about_photo {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 2.778rem;
+}
+
+.text_item {
+    margin-bottom: 1.111rem;
+}
+
+.about_title{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 5.333rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text_title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.555rem;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 615px) {
+    .about_content {
+        flex-direction: column-reverse;
+        padding: 1.667rem 2rem;
+    }
+
+    .about_title {
+        font-size: 4rem;
+    }
+
+    .about_photo {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.skills_title {
+    font-weight: 700;
+    font-size: 2.667rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.skills_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 1.667rem;
+}
+
+.skill_item {
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+}
+
+.item_title {
+    text-transform: uppercase;
+}
+
+.skills_list {
+    list-style: none;
+    margin-left: -2rem;
+}
+
+@media screen and (max-width: 615px) {
+
+    .skills_title {
+        font-size: 1.333rem;
+    }
+
+    .skills_items {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill_item {
+        margin-top: 1rem;
+    }
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_items {
+    background: url(../images/y-so-serious.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer_item {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.item_img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.555rem;
+}
+
+@media screen and (max-width: 615px) {
+
+    .footer_items {
+        flex-direction: column;
+    }
+}
