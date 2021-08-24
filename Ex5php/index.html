@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Лабораторная работа №5</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Безопасная форма</h1>
+        <form id="secure_form">
+            <input type="text" id="secure_input" name="secure_input" class="form-control" placeholder="Введите ID записи"><br>
+            <button type="button" id="secure_connection" class="btn btn-success">Выполнить</button><br>
+        </form>
+        <div id="secure_data" class="text-success"></div>
+        <h1>Небезопасная форма</h1>
+        <form id="unsecure_form">
+            <input type="text" id="unsecure_input" name="unsecure_input" class="form-control" placeholder="Введите ID записи"><br>
+            <button type="button" id="unsecure_connection" class="btn btn-success">Выполнить</button><br>
+        </form>
+        <div id="unsecure_data" class="text-success"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
